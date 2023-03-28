@@ -56,9 +56,9 @@ body{
 }
 @media (max-width: 500px) {
     .btn{
-        width: 70px;
-        height: 70px;
-        font-size: 40px;
+        width: 80px;
+        height: 80px;
+        font-size: 50px;
         margin: 5px;
     }
     .reset-btn{
