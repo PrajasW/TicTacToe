@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">TicTacToe</h1>
+        <h4 class="plays" id="plays">player 1 plays</h3>
+        <div class="game-board">
+            <div class="row">
+                <button class="btn" id="pos-00" onclick="change_table(0,0)"></button>
+                <button class="btn" id="pos-01" onclick="change_table(0,1)"></button>
+                <button class="btn" id="pos-02" onclick="change_table(0,2)"></button>
+            </div>
+            <div class="row">
+                <button class="btn" id="pos-10" onclick="change_table(1,0)"></button>
+                <button class="btn" id="pos-11" onclick="change_table(1,1)"></button>
+                <button class="btn" id="pos-12" onclick="change_table(1,2)"></button>
+            </div>
+            <div class="row">
+                <button class="btn" id="pos-20" onclick="change_table(2,0)"></button>
+                <button class="btn" id="pos-21" onclick="change_table(2,1)"></button>
+                <button class="btn" id="pos-22" onclick="change_table(2,2)"></button>
+            </div>
+        </div>
+        <h2 class="win-statement" id="win-statement"></h3>
+        <button type="submit" class="reset-btn" onclick="reset()"><h3>reset</h3></button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
