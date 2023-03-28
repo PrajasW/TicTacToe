@@ -55,7 +55,7 @@ body{
     margin: 0px;
 }
 @media (max-width: 500px) {
-    .btn{
+    .btn{   
         margin: 5px;
     }
     .reset-btn{
