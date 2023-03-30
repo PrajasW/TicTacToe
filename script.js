@@ -3,7 +3,13 @@ console.log("hi world")
 let table = [['','',''],['','',''],['','','']]
 let move = 0
 let win = false
+let score1 = 0
+let score2 = 0
 
+function change_score(){
+    document.getElementById("score1").innerHTML = score1
+    document.getElementById("score2").innerHTML = score2
+}
 function check_win(){
     // check diagonals
     if(table[0][0] != '' && table[0][0] == table[1][1] && table[0][0] == table[2][2])
@@ -63,11 +69,18 @@ function change_table(a,b){
     check_win()
     if(win)
     {
-        document.getElementById("plays").innerHTML = " "
+        document.getElementById("plays").innerHTML = ""
         if(table[a][b] == "x")
+        {
             document.getElementById("win-statement").innerHTML = "player 1 wins"
+            score1++
+        }
         else
+        {
             document.getElementById("win-statement").innerHTML = "player 2 wins"
+            score2++
+        }
+        change_score()
         return
     }
     move++

@@ -9,7 +9,7 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 200px;
+    width: 300px;
 }
 .title{
     align-self: center;
@@ -53,6 +53,11 @@ body{
 .reset-btn h3{
     color: #9644D7;
     margin: 0px;
+}
+.score-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
 }
 @media (max-width: 500px) {
     .btn{   
